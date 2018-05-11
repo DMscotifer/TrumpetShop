@@ -21,5 +21,8 @@ public class PercussionTest {
         assertEquals("Yamaha", drum.getMake());
     }
 
-    
+    @Test
+    public void canGetModel() {
+        assertEquals("4pc Shell Pack", drum.getModel());
+    }
 }

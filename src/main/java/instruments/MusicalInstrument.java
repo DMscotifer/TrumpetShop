@@ -25,4 +25,8 @@ public abstract class MusicalInstrument{
     public String getMake() {
         return make;
     }
+
+    public String getModel() {
+        return model;
+    }
 }

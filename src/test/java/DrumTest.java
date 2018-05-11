@@ -11,7 +11,7 @@ public class DrumTest {
 
     @Before
     public void before(){
-        drum = new Drum("Yamaha", "XYZ", "percussion", Material.brass, "black", 2500.00, "The perfect garage band setup...");
+        drum = new Drum("Yamaha", "XYZ", "percussion", Material.brass, "black", 2500.00, 1900.00, "The perfect garage band setup...");
     }
 
     @Test

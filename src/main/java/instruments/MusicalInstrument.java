@@ -7,16 +7,18 @@ public abstract class MusicalInstrument{
     private String type;
     private Material material;
     private String colour;
-    private double price;
+    private double boughtPrice;
+    private double sellPrice;
     private String description;
 
-    public MusicalInstrument(String make, String model, String type, Material material, String colour, double price, String description) {
+    public MusicalInstrument(String make, String model, String type, Material material, String colour, double boughtPrice, double sellPrice, String description) {
         this.make = make;
         this.model = model;
         this.type = type;
         this.material = material;
         this.colour = colour;
-        this.price = price;
+        this.boughtPrice = boughtPrice;
+        this.sellPrice = sellPrice;
         this.description = description;
     }
 
@@ -40,8 +42,12 @@ public abstract class MusicalInstrument{
         return colour;
     }
 
-    public double getPrice() {
-        return price;
+    public double getBoughtPrice() {
+        return boughtPrice;
+    }
+
+    public double getSellPrice() {
+        return sellPrice;
     }
 
     public String getDescription() {

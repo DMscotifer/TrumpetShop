@@ -2,6 +2,8 @@ package behaviours;
 
 public interface ISell {
 
-    void sell();
+    void calculateMarkup();
+
+    void calculatePotentialProfit();
 
 }

@@ -29,4 +29,30 @@ public abstract class MusicalInstrument{
     public String getModel() {
         return model;
     }
+
+    public String getType() {
+        return type;
+    }
+
+    public Material getMaterial() {
+        return material;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public String getRange() {
+        return range;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+
 }

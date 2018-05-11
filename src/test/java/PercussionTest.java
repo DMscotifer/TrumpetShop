@@ -25,4 +25,5 @@ public class PercussionTest {
     public void canGetModel() {
         assertEquals("4pc Shell Pack", drum.getModel());
     }
+
 }

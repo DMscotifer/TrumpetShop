@@ -1,6 +1,8 @@
 package instruments;
 
-public abstract class MusicalInstrument{
+import behaviours.ISell;
+
+public abstract class MusicalInstrument {
 
     private String make;
     private String model;
@@ -53,4 +55,5 @@ public abstract class MusicalInstrument{
     public String getDescription() {
         return description;
     }
+
 }

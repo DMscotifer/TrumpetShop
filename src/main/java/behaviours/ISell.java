@@ -1,8 +1,10 @@
 package behaviours;
 
+import instruments.MusicalInstrument;
+
 public interface ISell {
 
-    void calculateMarkup();
+    double calculateMarkup(MusicalInstrument instrument);
 
     void calculatePotentialProfit();
 

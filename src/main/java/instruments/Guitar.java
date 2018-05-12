@@ -11,4 +11,9 @@ public class Guitar extends MusicalInstrument implements IPlay {
     public String play(){
         return "[sweet riffs]... ";
     }
+
+    public double calculateMarkup(){
+        return this.getSellPrice() - this.getBoughtPrice();
+    }
+
 }

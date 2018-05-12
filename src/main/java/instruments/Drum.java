@@ -12,4 +12,9 @@ public class Drum extends MusicalInstrument {
         return "Ba Dum Tsss!";
     }
 
+    public double calculateMarkup(){
+        return this.getSellPrice() - this.getBoughtPrice();
+    }
+
+
 }

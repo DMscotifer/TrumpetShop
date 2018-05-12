@@ -41,8 +41,5 @@ public class ShopTest {
         assertEquals(2, shop.getStock().size());
     }
 
-    @Test
-    public void canCalculateMarkup() {
-        assertEquals(600.00, shop.calculateMarkup(drum), 0.1);
-    }
+
 }

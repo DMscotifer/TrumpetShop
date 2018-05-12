@@ -3,7 +3,7 @@ import instruments.MusicalInstrument;
 
 import java.util.ArrayList;
 
-public class Shop implements ISell {
+public class Shop {
 
     private String name;
     private ArrayList<MusicalInstrument> stock;
@@ -19,15 +19,6 @@ public class Shop implements ISell {
 
     public ArrayList<MusicalInstrument> getStock() {
         return stock;
-    }
-
-    public double calculateMarkup(MusicalInstrument instrument){
-        return instrument.getSellPrice() - instrument.getBoughtPrice();
-    }
-
-    @Override
-    public void calculatePotentialProfit() {
-
     }
 
 }

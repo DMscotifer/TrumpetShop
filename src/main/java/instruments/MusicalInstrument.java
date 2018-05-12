@@ -6,14 +6,14 @@ public abstract class MusicalInstrument {
 
     private String make;
     private String model;
-    private String type;
+    private InstrumentType type;
     private Material material;
     private String colour;
     private double boughtPrice;
     private double sellPrice;
     private String description;
 
-    public MusicalInstrument(String make, String model, String type, Material material, String colour, double boughtPrice, double sellPrice, String description) {
+    public MusicalInstrument(String make, String model, InstrumentType type, Material material, String colour, double boughtPrice, double sellPrice, String description) {
         this.make = make;
         this.model = model;
         this.type = type;
@@ -32,7 +32,7 @@ public abstract class MusicalInstrument {
         return model;
     }
 
-    public String getType() {
+    public InstrumentType getType() {
         return type;
     }
 

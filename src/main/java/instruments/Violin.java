@@ -5,7 +5,7 @@ import behaviours.ISell;
 
 public class Violin extends MusicalInstrument implements ISell, IPlay {
 
-    public Violin(String make, String model, String type, Material material, String colour, double boughtPrice, double sellPrice, String description) {
+    public Violin(String make, String model, InstrumentType type, Material material, String colour, double boughtPrice, double sellPrice, String description) {
         super(make, model, type, material, colour, boughtPrice, sellPrice, description);
     }
 

@@ -1,4 +1,5 @@
 import instruments.Drum;
+import instruments.InstrumentType;
 import instruments.Material;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,7 +12,7 @@ public class DrumTest {
 
     @Before
     public void before(){
-        drum = new Drum("Yamaha", "XYZ", "percussion", Material.brass, "black", 2500.00, 1900.00, "The perfect garage band setup...");
+        drum = new Drum("Yamaha", "XYZ", InstrumentType.percussion, Material.brass, "black", 2500.00, 1900.00, "The perfect garage band setup...");
     }
 
     @Test
@@ -27,5 +28,10 @@ public class DrumTest {
     @Test
     public void canPlay() {
         assertEquals("Ba Dum Tsss!", drum.play());
+    }
+
+    @Test
+    public void hasAType() {
+        assertEquals(InstrumentType.percussion, drum.getType());
     }
 }

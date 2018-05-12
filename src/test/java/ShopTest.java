@@ -1,7 +1,4 @@
-import instruments.Drum;
-import instruments.Guitar;
-import instruments.Material;
-import instruments.MusicalInstrument;
+import instruments.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -18,8 +15,8 @@ public class ShopTest {
 
     @Before
     public void before(){
-        drum = new Drum("Yamaha", "XYZ", "percussion", Material.brass, "black", 1900.00, 2500.00, "The perfect garage band setup...");
-        guitar = new Guitar("Les Paul", "Axe", "string", Material.wood, "red", 15000, 20000, "Cherry red axe used by one of the greats!");
+        drum = new Drum("Yamaha", "XYZ", InstrumentType.percussion, Material.brass, "black", 1900.00, 2500.00, "The perfect garage band setup...");
+        guitar = new Guitar("Les Paul", "Axe", InstrumentType.string, Material.wood, "red", 15000, 20000, "Cherry red axe used by one of the greats!");
         stock1 = new ArrayList<MusicalInstrument>();
         stock1.add(drum);
         stock1.add(guitar);

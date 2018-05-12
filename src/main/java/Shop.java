@@ -21,4 +21,12 @@ public class Shop {
         return stock;
     }
 
+    public double calculateTotalMarkup(){
+        double total = 0;
+        for (MusicalInstrument instrument : stock){
+            total += instrument.calculateMarkup();
+        }
+        return total;
+    }
+
 }

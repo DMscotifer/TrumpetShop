@@ -56,4 +56,8 @@ public abstract class MusicalInstrument {
         return description;
     }
 
+    public double calculateMarkup(){
+        return this.getSellPrice() - this.getBoughtPrice();
+    }
+
 }

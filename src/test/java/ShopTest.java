@@ -41,5 +41,8 @@ public class ShopTest {
         assertEquals(2, shop.getStock().size());
     }
 
-
+    @Test
+    public void canCalculateTotalPotentialMarkup() {
+        assertEquals(5600, shop.calculateTotalMarkup(), 0.1);
+    }
 }

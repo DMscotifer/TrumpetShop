@@ -1,13 +1,20 @@
 package instruments;
 
-public class Violin extends MusicalInstrument {
+import behaviours.IPlay;
+import behaviours.ISell;
+
+public class Violin extends MusicalInstrument implements ISell, IPlay {
 
     public Violin(String make, String model, String type, Material material, String colour, double boughtPrice, double sellPrice, String description) {
         super(make, model, type, material, colour, boughtPrice, sellPrice, description);
     }
 
     public double calculateMarkup(){
-        return this.getSellPrice() - this.getBoughtPrice();
+        return super.calculateMarkup();
     }
 
+
+    public String play() {
+        return "[Psycho...]";
+    }
 }

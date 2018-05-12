@@ -1,8 +1,9 @@
 package instruments;
 
 import behaviours.IPlay;
+import behaviours.ISell;
 
-public class Drum extends MusicalInstrument {
+public class Drum extends MusicalInstrument implements ISell, IPlay {
 
     public Drum(String make, String model, String type, Material material, String colour, double boughtPrice, double sellPrice, String description) {
         super(make, model, type, material, colour, boughtPrice, sellPrice, description);
@@ -13,7 +14,7 @@ public class Drum extends MusicalInstrument {
     }
 
     public double calculateMarkup(){
-        return this.getSellPrice() - this.getBoughtPrice();
+        return super.calculateMarkup();
     }
 
 

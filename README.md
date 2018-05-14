@@ -31,11 +31,3 @@ You will need to:
 
 ## Remember
 Use TDD, with separate test files for each class.
-
-## PDA Reminder
-
-Remember to gather evidence for your PDA this week. This should only take 5 minutes:
-
-- Go to your [PDA Checklist](https://github.com/codeclan/pda/blob/master/Student%20Checklist/Student%20Checklist.pdf)
-
-- Submit your PDA evidence (screenshots, etc.) to your own PDA repo 
